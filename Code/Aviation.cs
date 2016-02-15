@@ -206,7 +206,7 @@ namespace Code
     {
         private List<Wing> Wings { get;  set; } 
         public int CruiseSpeed { get; private set; }
-        public int StallSpeed { get; set; }
+        public int StallSpeed { get; }
 
         public FixedWingAircraft(List<Wing> wings, int cruisespeed, int stallspeed, List<Engine> engines,
             int fuelcapacity, string manufacturer, string model, int maxTOweight, int vne, string serialnumber)
