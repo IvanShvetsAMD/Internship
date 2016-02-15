@@ -205,7 +205,7 @@ namespace Code
     class FixedWingAircraft : AircraftHeavierThanAir
     {
         private List<Wing> Wings { get;  set; } 
-        public int CruiseSpeed { get; private set; }
+        public int CruiseSpeed { get; }
         public int StallSpeed { get; }
 
         public FixedWingAircraft(List<Wing> wings, int cruisespeed, int stallspeed, List<Engine> engines,
